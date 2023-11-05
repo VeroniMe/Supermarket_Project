@@ -9,8 +9,6 @@
 
 
 
-
-
 int menu();
 
 
@@ -22,7 +20,7 @@ int main(int argc, char* argv[])
 
 	if (!initSuperMarket(&market, ifCompress, superFileName, CUSTOMER_FILE_NAME))
 	{
-		printf("error init  Super Market");
+		printf("Error init Super Market!!!");
 		//return 0;
 	}
 
@@ -41,17 +39,17 @@ int main(int argc, char* argv[])
 
 		case eAddProduct:
 			if (!addProduct(&market))
-				printf("Error adding product\n");
+				printf("Error adding product!\n");
 			break;
 
 		case eAddCustomer:
 			if (!addCustomer(&market))
-				printf("Error adding customer\n");
+				printf("Error adding customer!\n");
 			break;
 
 		case eCustomerDoShopping:
 			if (!doShopping(&market))
-				printf("Error in shopping\n");
+				printf("Error in shopping!\n");
 			break;
 
 		case ePrintCart:
@@ -60,7 +58,7 @@ int main(int argc, char* argv[])
 
 		case eCustomerPay:
 			if (!doPayment(&market))
-				printf("Error in payment\n");
+				printf("Error in payment!\n");
 			break;
 
 		case eSortCustomer:
