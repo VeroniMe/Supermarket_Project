@@ -4,6 +4,7 @@
 #include <string.h>
 #include "Customer.h"
 #include "General.h"
+
 #include "fileHelper.h"
 
 int	initCustomer(Customer* pCustomer)
